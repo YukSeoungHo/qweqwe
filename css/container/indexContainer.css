@@ -1,0 +1,11 @@
+/*indexCotainer*/
+.container{
+  
+}
+.container .inner-container{
+
+}
+.container .inner-container .index{
+display: flex;
+justify-content: center;
+}

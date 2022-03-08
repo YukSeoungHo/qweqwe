@@ -1,0 +1,122 @@
+/*indexCotainer*/
+.container{
+  
+}
+.container .inner-container{
+
+}
+/* join height가 header와 footer제외한 브라우저 height 영역안에 위치 시키시오. calc함수 이용 100vh */
+.container .inner-container .join{
+}
+.container .inner-container .join .inner-join{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 60px - 121px);
+    /* background-color: #ccc; */
+    align-items: center;
+    
+}
+.container .inner-container .join .inner-join .join-con{
+flex: 0 1 500px;
+/* border: 1px solid; */
+}
+.container .inner-container .join .inner-join .join-con h1.title{
+    background-color: #000;
+    color: #fff;
+    line-height: 40px;
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+.container .inner-container .join .inner-join .join-con .join-form{
+    /* border: 1px solid #f0f; */
+}
+.container .inner-container .join .inner-join .join-con .join-form ul{
+    /* border: 1px solid #f0f; */
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    padding: 5px;
+    line-height: 20px;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1{
+    justify-content: space-between;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li label{
+    /* border: 1px solid red; */
+    flex: 0 0 80px;
+    font-size: 12px;
+    padding:  5px 5px;;
+    background-color: #ccc;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .right-box{
+    /* border: 1px solid black; */
+    flex: 5;
+    font-size: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .right-box select{
+    font-size: 12px;
+    flex:  0 0 80px;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .right-box input{
+    border: 1px solid #ccc;
+    padding: 5px 5px;
+
+    box-sizing: border-box;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .right-box .userPhone{
+    position: relative;
+    /* background-color: #f00; */
+    
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .right-box .userPhone:not(:last-child){
+    /* background-color: #f00; */
+    margin-right:  5px;
+    
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .right-box .userPhone:not(:last-child)::after{
+    position: absolute;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+}
+
+.container .inner-container .join .inner-join .join-con .join-form ul>li textarea{
+    display: block;
+    flex:  0 1 100%;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li textarea:focus{
+    outline: 1px solid red;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li:last-child{
+    justify-content: center;
+    padding: 10px;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li:last-child input{
+    padding: 5px 10px;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    flex: 0 0 100px;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li:last-child input:first-child{
+    margin-right: 10px;
+    
+}
